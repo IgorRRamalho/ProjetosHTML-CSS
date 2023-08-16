@@ -1,0 +1,142 @@
+@font-face {
+    font-family: android;
+    src: url(imgs/idroid.otf);
+}
+
+
+body{
+    background-color: #151E3F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+p{
+    text-indent: 18pt;  
+}
+
+main{
+    padding: 7px;
+    margin: 9px 400px;
+    box-shadow: 7px 10px 20px #111936d5;
+    background-color: white;
+   
+
+}
+
+
+h2{
+    font-family: android;
+    background-image: linear-gradient(to right, #030027, #151e3fd4 , white 85%);
+    color: white;
+    border-radius: 15px 0px;
+    padding: 3px;
+    text-indent: 3pt;
+    
+}
+
+main > h1{
+    font-family: android;
+    color: #030027;
+    text-align: center;
+}
+
+main > p{
+    text-align: start;
+}
+
+
+header > nav > a{
+   
+    white-space: pre;
+    text-decoration: none;
+    color: white;
+   
+    
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, #151e3fd4, #030027);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px 20px 5px 20px;
+    margin: -8px;
+    box-shadow: 1px 4px 13px 1px #111936d5;
+    
+}
+
+
+header > h1,p{
+    text-align: center;
+}
+
+
+div#video{
+    text-align: center;
+    border: solid;
+    border-width: 30px;
+    color: #030027;
+    margin: -7px;
+}
+
+div#video > iframe{
+    width: 40.5em;
+    height: 20.5em;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 4px 13px 4px #111936ce;
+      
+}
+
+footer{
+    margin: -9px 0px -15px 0px;
+    background-color: #29386771;
+    color: white;
+    box-shadow: 1px -4px 13px 1px #111936d5;
+    
+}
+
+main > section > article > p{
+    text-align: start;
+}
+
+section#extra{
+    background-color: #05144d3c;
+    border-radius: 1em 1em ;
+    padding: -10px -15px 5px -20px;
+    box-shadow: 1px 2px 13px 1px #11193692;
+    
+}
+section#extra > h3{
+    background-color: #081441;
+    color: white;
+    padding: 10px;
+    border-radius: 1em 1em 0em 0em;
+    box-shadow: 1px 4px 13px 2px #11193672;
+}
+
+section#extra > div.lista{
+
+    float: left;
+    width: 50%;    
+}
+
+section#final > p{
+    text-align: start;
+}
+
+div.imagem{
+    text-align: center;
+}
+
+header > nav > a:hover{
+    background-color: #1e2542;
+    padding: 5px;
+    border-radius: 40px;
+    box-shadow: 1px 4px 13px 2px #101731a0;
+    
+}
+
+
+
+

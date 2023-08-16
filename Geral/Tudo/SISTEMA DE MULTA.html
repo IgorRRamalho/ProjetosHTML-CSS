@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE MULTA</title>
+</head>
+<style>
+    body{
+        background: black;
+        text-align: center;
+        color: white;
+        font: normal 20px Impact;
+    }
+    
+    p#multa{
+        font: normal 30px italic;
+        color: red;
+        text-align: center;
+    }
+
+
+</style>
+
+<body>
+    <hi id="titulo">SISTEMAS DE MULTAS<br></hi>
+    VELOCIDADE DO VEICULO: <input type="text" name="txtvel" id="txtvel" > <input type="button" value="VERIFICAR" id="veri" onclick="calcular()">
+    <div id="resul"></div>
+
+
+    
+    <script>
+        function calcular(){
+            var txvelo = window.document.querySelector('input#txtvel')
+            var resu = window.document.querySelector('div#resul')
+            var velo = Number(txvelo.value)
+            
+              
+            if(velo>30){
+                resu.innerHTML = `<p id="multa">SUA VELOCIDADE É DE ${velo} km/h <br><strong>FOI MULTADO!<strong></p>`
+            }else
+            resu.innerHTML = `<p>SUA VELOCIDADE É DE ${velo} km/h <br>DIRIGA COM CUIDADO!</p>`
+            
+
+           
+        }
+       
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIOVANNA</title>
+    <style>
+       body{
+        background: rgb(106, 177, 106);
+        font: normal 20pt Impact;
+        text-align: center;
+       }
+
+       div#mouse{
+            text-align: center;
+            background: white;
+            width: 200px;
+            height: 190px;
+            line-height: 130pt;
+            
+
+       }
+
+    </style>
+
+    <h1>TITULO DO SITE</h1>
+
+</head>
+
+
+<body>
+
+    <p>textotextotexto</p>
+    <div id="mouse"> AREA DE MOUSE</div>
+    <input type="button" value="BOTAO">
+
+</body>
+
+<script>
+   var mousem = document.querySelector('div#mouse')
+   mousem.addEventListener('mouseenter', mouseentro)
+   mousem.addEventListener('mouseout', mousefora)
+
+   function mouseentro(){
+        mousem.style.color = 'pink'
+
+   }
+   function mousefora(){
+    mousem.style.color = 'black'
+
+   }
+
+   
+
+
+
+</script>
+
+</html>

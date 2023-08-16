@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: white;
+
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+            font: normal 30px Arial;
+        }
+        div#res{
+            text-align: center;
+            color: white;
+            font: normal 40px Impact;
+        }
+        p{
+            color: whitesmoke1;
+            font: normal 20px Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE NACIONALIDADE</h1>
+
+    <p>PAIS DE NASCIMENTO : <input type="text" name="pais" id="paisu" > <input type="button" value="VERIFICAR" id="butao" onclick = 'verificar()'></p>
+    
+    <div id="res"> </div>
+
+    <script>
+        function verificar(){
+            var paisus = window.document.querySelector('input#paisu')
+            var pais = String(paisus.value)
+           
+            var res = window.document.querySelector('div#res')
+            
+            if (pais == "Brasil") {
+                res.innerHTML = 'VOCE É BRASILEIRO'
+            } else {
+                 res.innerHTML = 'VOCE É ESTRANGEIRO'
+            }
+        }
+    </script>
+</body>
+</html>
+        
