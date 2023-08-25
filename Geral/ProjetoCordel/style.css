@@ -31,10 +31,25 @@ header > h1{
 
 section{
     font-family: var(--fonte3);
+    padding: 1em 0em 1em 1em;
+    width: 10em;
+    font-size: 3em;
 }
 
-section#um{
-    font-size: 3em;
+section#dois{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.451);
+    padding: 1em;
+    border-radius: 1em;
+    
+}
+
+div#img2{
+    background-image: url(https://images.pexels.com/photos/69004/pexels-photo-69004.jpeg?cs=srgb&dl=pexels-george-sharvashidze-69004.jpg&fm=jpg);
+    padding: 1em;
+    
+    
+    background-attachment: fixed;
 }
 
 
