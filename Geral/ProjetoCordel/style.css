@@ -6,11 +6,15 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
+
 }
 
 *{
     margin: 0;
+    padding: 0;
 }
+
+
 
 
 header{
@@ -19,6 +23,7 @@ header{
     text-align: center;
     font-family: var(--fonte2);
     font-variant: small-caps;
+    box-shadow: 1px 1px 13px black;
 
     font-size: 1em;
     padding-bottom: 1em;    
@@ -32,25 +37,69 @@ header > h1{
 section{
     font-family: var(--fonte3);
     padding: 1em 0em 1em 1em;
-    width: 10em;
-    font-size: 3em;
+    font-size: 2em;
+    text-align: center;
+    
+   
 }
 
-section#dois{
+section#dois, section#quatro {
     color: white;
-    background-color: rgba(0, 0, 0, 0.451);
-    padding: 1em;
-    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.623);   
     
+    padding: 0.2em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+
+   margin: 1em 8.5em;
+    
+    min-width: 45vh;
+    
+    max-width: 200vh; /* Define a largura máxima */
+    
+    box-shadow: 1px 1px 13px black;
 }
 
-div#img2{
-    background-image: url(https://images.pexels.com/photos/69004/pexels-photo-69004.jpeg?cs=srgb&dl=pexels-george-sharvashidze-69004.jpg&fm=jpg);
-    padding: 1em;
-    
+div#img3, #img2{
     
     background-attachment: fixed;
+    padding: 1em;
+    background-position: center;
+    background-size: cover;
+    display: flex center;
+  
+    
 }
 
+
+section#tres, #cinco{
+    box-shadow: 1px 1px 13px black;
+}
+
+div#img3{
+   
+    background-image: url(https://a.imagem.app/baeTLV.png);
+    
+}
+
+
+div#img2{
+    
+    background-image: url(https://images.pexels.com/photos/69004/pexels-photo-69004.jpeg?cs=srgb&dl=pexels-george-sharvashidze-69004.jpg&fm=jpg);
+   
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+p{
+    font-size: 3vw;
+}
 
 
