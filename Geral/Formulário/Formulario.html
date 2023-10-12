@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULÁRIO UFMS</title>
+</head>
+<header>
+    <h1>FORMULÁRIO</h1>
+</header>
+
+<body>
+   
+    <form autocomplete="off" method="post" action="cadastro.html">
+
+        <fieldset id="infos">
+            <p>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required />
+
+                <label for="cpf">CPF</label>
+                <input type="number" id="cpf" required />
+            </p>
+
+            <p>
+                <label for="DataNasc">Data Nascimento</label>
+                <input type="date" id="DataNasc" required />
+
+                <label for="sexo">Sexo</label>
+                <input type="radio" name="sexo" id="sexo" value="M" style="margin: 1em" />M
+                <input type="radio" name="sexo" id="sexo" value="F" style="margin: 1em" />F
+            </p>
+
+            <p>
+                <label for="EstCi">Est. Civil</label>
+                <select name="EstadoCivil" id="EstCi">
+                    <option value="Casado">Casado</option>
+                    <option value="Casado">Solteiro</option>
+                    <option value="Casado">Viúvo</option>
+                    <option value="Casado">Divorciado</option>
+                </select>
+
+            </p>
+
+            <p>
+                <label for="login">Login</label>
+                <input type="text" id="login" required />
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" required />
+            </p>
+
+
+        </fieldset>
+
+        <fieldset id="contato">
+            <p>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required />
+                <label for="website">Web Site</label>
+                <input type="text" name="website" id="website" />
+            </p>
+            <p>
+                <label for="Endereco">Endereço</label>
+                <input type="text" name="endereco" id="Endereco" required />
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required />
+            </p>
+            <p>
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required />
+                <label for="UF">UF</label>
+                <select name="estados" id="UF" required>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </select>
+            </p>
+            <p>
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep" required />
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(12) 1234-5678" maxlength="13" />
+
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular" maxlength="13" placeholder="(12) 1234-5678" required />
+            </p>
+        </fieldset>
+
+
+
+        <fieldset id="assuntos">
+            <h3>Deseja receber informações sobre os seguintes assuntos abaixo:</h3>
+
+            <label><input type="checkbox" name="categorias" value="Tecnologia"> Tecnologia</label>
+            <label><input type="checkbox" name="categorias" value="Esportes"> Esportes</label>
+            <label><input type="checkbox" name="categorias" value="Automóveis"> Automóveis</label>
+            <label><input type="checkbox" name="categorias" value="Culinária"> Culinária</label>
+            <label><input type="checkbox" name="categorias" value="Política"> Política</label>
+            <label><input type="checkbox" name="categorias" value="Policial"> Policial</label>
+            <br>
+            <label><input type="checkbox" name="categorias" value="Tempo"> Tempo</label>
+            <label><input type="checkbox" name="categorias" value="Cultura"> Cultura</label>
+            <label><input type="checkbox" name="categorias" value="Economia"> Economia</label>
+            <label><input type="checkbox" name="categorias" value="Jogos"> Jogos</label>
+            <label><input type="checkbox" name="categorias" value="Educação"> Educação</label>
+            <label><input type="checkbox" name="categorias" value="Viagem"> Viagem</label>
+            <label><input type="checkbox" name="categorias" value="Empregos"> Empregos</label>
+            <label><input type="checkbox" name="categorias" value="Moda e Estilo"> Moda e Estilo</label>
+        </fieldset>
+        <div id="final">
+            <p><label for="Regras">Li as regras de cadastro e autorizo a criação do usuário <input type="checkbox" name="regras" id="Regras"></label></p>
+
+            <input type="submit" value="Confirmar" id="Confirmar"> <input type="button" value="Retornar" id="Confirmar" required>
+        </div>
+    </form>
+
+</body>
+
+</html>

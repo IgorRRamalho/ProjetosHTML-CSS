@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos da Peça de Roupa</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+      </style>
+
+    <style>
+        body {
+            font-family: 'Lexend';
+            
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tamanho-container {
+            position: relative;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        .tamanho-titulo {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .tamanho-lista {
+            background-color: #fff;
+            border: 0px solid #ccc;
+            border-radius: 5px;
+            padding: 0px;
+            margin-top: 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .tamanho-lista.aberta {
+            max-height: 200px;
+            border: 1px solid #ccc;
+        }
+
+        .tamanho-item {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .tamanho-item:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="tamanho-container">
+        <div class="tamanho-titulo" onclick="toggleTamanhos()">ESTADO</div>
+        <div class="tamanho-lista" id="tamanhos">
+            <div class="tamanho-item">Mato Grosso do Sul</div>
+            <div class="tamanho-item">Paraná</div>
+            <div class="tamanho-item">Tocantins</div>
+            <div class="tamanho-item">Bahia</div>
+            <div class="tamanho-item">Recife</div>
+            <div class="tamanho-item">Minas Gerais</div>
+            <div class="tamanho-item">Mato Grosso</div>
+            <div class="tamanho-item">São Paulo</div>
+            <div class="tamanho-item">Rio de Janeiro</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTamanhos() {
+            var tamanhos = document.getElementById("tamanhos");
+            tamanhos.classList.toggle("aberta");
+        }
+    </script>
+</body>
+</html>
